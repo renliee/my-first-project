@@ -1,8 +1,11 @@
 from sqlalchemy import create_engine #make connection to MySQL databases
 from sqlalchemy.orm import sessionmaker #make session to interact with database
 from models import Base #to make table
-
-DATABASE_URL =  "mysql+pymysql://root:password123@localhost:3306/restaurant_db" #to show the engine below the address, password, host, etc, so engine could access db
+import os
+from dotenv import load_dotenv
+load_dotenv()
+#url below is postgreSQL database, useing 5432 as port numbers 
+DATABASE_URL =  os.getenv("DATABASE_URL") #to show the engine below the address, password, host, etc, so engine could access db
 
 engine = create_engine( #make connection to db
     DATABASE_URL,
