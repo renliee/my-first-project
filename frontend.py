@@ -12,7 +12,7 @@ st.set_page_config(page_title="ChatBot Restoran", page_icon="🤖")
 with st.sidebar: #with is needed if there's someting to open (file, connection) and will close that automatically, grouping more than 1 comments to some context (code below)
     st.header("🍴 Tentang Restoran")
     st.write("**Nama:** Restaurant NICE")
-    st.write("**Lokasi:** Jl. Angsoka Hijau, Jakarta")
+    st.write("**Lokasi:** Jl. Puri Indah, Jakarta")
     st.write("**Jam Buka:** 10.00-22.00 WIB")
     st.write("---")
 
